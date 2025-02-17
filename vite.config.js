@@ -4,33 +4,36 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), VitePWA({
-    registerType: 'prompt',
-    injectRegister: false,
+  plugins: [
+    vue(),
+    VitePWA({
+      registerType: "autoUpdate",
+      injectRegister: false,
 
-    pwaAssets: {
-      disabled: false,
-      config: true,
-    },
+      pwaAssets: {
+        disabled: false,
+        config: true,
+      },
 
-    manifest: {
-      name: 'product-list-with-cart',
-      short_name: 'product-list-with-cart',
-      description: 'product-list-with-cart',
-      theme_color: '#ffffff',
-    },
+      manifest: {
+        name: "product-list-with-cart",
+        short_name: "product-list-with-cart",
+        description: "product-list-with-cart",
+        theme_color: "#ffffff",
+      },
 
-    workbox: {
-      globPatterns: ['**/*.{js,css,html,svg,png,ico}'],
-      cleanupOutdatedCaches: true,
-      clientsClaim: true,
-    },
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,svg,png,ico}"],
+        cleanupOutdatedCaches: true,
+        clientsClaim: true,
+      },
 
-    devOptions: {
-      enabled: false,
-      navigateFallback: 'index.html',
-      suppressWarnings: true,
-      type: 'module',
-    },
-  })],
-})
+      devOptions: {
+        enabled: true,
+        navigateFallback: "index.html",
+        suppressWarnings: true,
+        type: "module",
+      },
+    }),
+  ],
+});
