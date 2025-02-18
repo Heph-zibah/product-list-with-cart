@@ -1,9 +1,11 @@
 <script setup>
+import HomeView from './views/HomeView.vue'
 </script>
 
 <template>
-  <div>
-   <h1>hello</h1>
+  <div class="">
+
+    <home-view/>
   </div>
 </template>
 
