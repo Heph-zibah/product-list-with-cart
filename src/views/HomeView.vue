@@ -5,7 +5,7 @@ import OrderSummaryComponent from '../components/OrderSummaryComponent.vue'
 
 
 <template>
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 max-w-[1200px] xl:mx-w-[1300px] mx-auto py-20">
         <orders-component/>
         <order-summary-component/>
         
