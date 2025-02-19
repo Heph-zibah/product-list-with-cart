@@ -43,7 +43,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Frontend Mentor || Product List With Cart](https://frontendmentor-product-lists-with-cart.vercel.app/)
+- Github Site URL: [Github Repository](https://github.com/Heph-zibah/product-list-with-cart)
 
 ## My process
 
