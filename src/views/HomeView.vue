@@ -3,10 +3,7 @@ import {ref} from 'vue';
 import OrdersComponent from '../components/OrdersComponent.vue'
 import OrderSummaryComponent from '../components/OrderSummaryComponent.vue'
 import { items } from '../lib/items';
-import { useCartStore } from '../stores/cartStore';
 
-const cartStore = useCartStore();
-const hasCartItems = ref(false);
 </script>
 
 

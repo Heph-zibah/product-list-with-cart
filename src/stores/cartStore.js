@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 
 export const useCartStore = defineStore("cart", {
   state: () => ({
-    cart: {}, // Stores { itemId: { item, quantity } }
+    cart: {},
   }),
   getters: {
     totalItems: (state) =>
@@ -31,7 +31,7 @@ export const useCartStore = defineStore("cart", {
       if (this.cart[itemId] && this.cart[itemId].quantity > 1) {
         this.cart[itemId].quantity--;
       } else {
-        delete this.cart[itemId]; // Remove item if quantity is 0
+        delete this.cart[itemId];
       }
     },
   },

@@ -15,7 +15,6 @@ const toggleOption = (item) => {
       <div class="relative">
         <img :src="item.image.desktop" alt="" class="rounded-[20px]">
 
-        <!-- Add to cart button -->
         <div 
           @click="toggleOption(item)" 
           class="text-xs bg-white rounded-full px-3 py-2 flex items-center gap-2 absolute -bottom-5 left-0 right-0 w-fit shadow-md drop-shadow-sm mx-auto cursor-pointer border border-Red">
@@ -23,7 +22,7 @@ const toggleOption = (item) => {
           <p class="text-Rose500">Add to cart</p>
         </div>
 
-        <!-- Quantity controls -->
+      
         <div v-if="cartStore.cart[item.id]" 
           class="text-xs bg-Red text-white rounded-full px-3 py-2 flex items-center justify-between gap-6 absolute -bottom-5 left-0 right-0 w-fit shadow-md drop-shadow-sm mx-auto cursor-pointer border border-Red">
           

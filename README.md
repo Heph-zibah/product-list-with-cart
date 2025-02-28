@@ -58,6 +58,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - [Vue](https://vuejs.org/) - JS library
 - [Vite-PWA](https://vite-pwa-org.netlify.app//) - React framework
 - [Tailwind CSS](https://v3.tailwindcss.com/) - For styles
+- [Pinia](https://pinia.vuejs.org/introduction.html) - For store management
 
 
 ### What I learned

@@ -2,7 +2,7 @@
 
 import ItemComponent from './ItemComponent.vue';
 const props = defineProps(['items']);
-console.log(props.items);
+// console.log(props.items);
 
 </script>
 
