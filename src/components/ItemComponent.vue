@@ -1,28 +1,28 @@
 <script setup>
 import { ref, reactive } from 'vue';
-import { items } from '../lib/items';
+const props = defineProps(['items']);
+console.log(props.items);
 
 const showOptions = reactive({});
 const quantities = reactive({});
 
-// Toggle visibility of options per item
+
 const toggleOption = (itemId) => {
     if (!showOptions[itemId]) {
         showOptions[itemId] = true;
-        quantities[itemId] = 1; // Set initial quantity when item is first clicked
+        quantities[itemId] = 1; 
     } else {
         showOptions[itemId] = !showOptions[itemId];
     }
 };
 
-// Increment item quantity
+
 const incrementQuantity = (itemId) => {
     if (quantities[itemId] !== undefined) {
         quantities[itemId]++;
     }
 };
 
-// Decrement item quantity (ensuring it doesn’t go below 1)
 const decrementQuantity = (itemId) => {
     if (quantities[itemId] > 1) {
         quantities[itemId]--;
@@ -32,7 +32,7 @@ const decrementQuantity = (itemId) => {
 
 <template>
     <div class="col-span-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-10 lg:gap-x-4 gap-y-10 mt-10">
-        <div v-for="item in items" :key="item.id" class="cursor-pointer space-y-1 relative">
+        <div v-for="item in props.items" :key="item.id" class="cursor-pointer space-y-1 relative">
             <div class="relative">
                 <img :src="item.image.desktop" alt="" class="rounded-[20px]">
                 <div 
