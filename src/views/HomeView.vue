@@ -1,5 +1,4 @@
 <script setup>
-import {ref} from 'vue';
 import OrdersComponent from '../components/OrdersComponent.vue'
 import OrderSummaryComponent from '../components/OrderSummaryComponent.vue'
 import { items } from '../lib/items';
@@ -14,3 +13,6 @@ import { items } from '../lib/items';
         
     </div>
 </template>
+<style scoped>
+
+</style>

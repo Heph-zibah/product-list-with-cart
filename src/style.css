@@ -4,7 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    scrollbar-width: none;
+}
 body {
     background-color: hsl(20, 50%, 98%);
     font-family: "Red Hat Text", serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
